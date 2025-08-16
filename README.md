@@ -19,7 +19,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## 2. Admin password: 123456
 
-# 3. Front-end Live Site Link: https://pet-adoupt-platfrom.web.app
+# 3.  Live Site Link: https://pet-adoupt-platfrom.web.app
 
 ## 4. Client Side Github Repository Link: [Client Repo](https://github.com/mdtahsinislam/pet-adoupt-platfrom-client)
 
