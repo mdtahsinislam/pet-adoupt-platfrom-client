@@ -16,12 +16,12 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## Important information
 ## 1. Admin email: admin@gmail.com
-
 ## 2. Admin password: 123456
+## Database : DBpet's
 
 # 3.  Live Site Link: https://pet-adoupt-platfrom.web.app
 
-## 4. Client Side Github Repository Link: [Client Repo](https://github.com/mdtahsinislam/pet-adoupt-platfrom-client)
+## 4. Client Side Github Repository Link:[Client Repo](https://github.com/mdtahsinislam/pet-adoupt-platfrom-client)
 
-## 5. Server Side Github Repository Link: [Server Repo](https://github.com/mdtahsinislam/pet-adoupt-platfrom-serverr)
+## 5. Server Side Github Repository Link:[Server Repo](https://github.com/mdtahsinislam/pet-adoupt-platfrom-serverr)
 
