@@ -148,14 +148,14 @@ Admins see everything users do **+ extra pages**:
 
 ---
 
-## ⚡ Important Info
+# ⚡ Important Info
 - Admins can also access all user routes  
 - Fully responsive (mobile → desktop)  
 - **Dark/Light mode** toggle available  
 
 ---
 
-## ✨ Technology Stack
+# ✨ Technology Stack
 * Frontend: React.js / Tailwind CSS / daisyui
 * Backend: Node.js + Express.js
 * Database: MongoDB
@@ -163,8 +163,8 @@ Admins see everything users do **+ extra pages**:
 * Image Hosting:  imgbb
 * Payments: Stripe Integration  
 * Hosting: Frontend (Client site): Firebase Hosting | Backend (Server site): Vercel Hosting
-* Toaster/Alerts: react-toastify or SweetAlert2
-* Slider: Swiper.js or DaisyUI Carousel
+* Toaster/Alerts: react-toastify & SweetAlert2
+* Slider:  DaisyUI Carousel
 * Version Control: GitHub
 
 ---
