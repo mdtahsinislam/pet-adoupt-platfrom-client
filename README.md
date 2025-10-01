@@ -15,7 +15,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 # 🎯 Pet Adoption Platform 🐾
 
-A full-stack **MERN Pet Adoption Platform** that connects loving families with pets in need.  
+🐾 A full-stack **MERN Pet Adoption Platform** that connects loving families with pets in need.  
 This project enables users to browse pets, send adoption requests, donate to campaigns, and manage pets through a secure authentication system with role-based dashboards (User & Admin).  
 
 ---
