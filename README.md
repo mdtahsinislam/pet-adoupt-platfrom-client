@@ -23,10 +23,10 @@ This project enables users to browse pets, send adoption requests, donate to cam
 ## 🚀 Live Demo
 
 # 🌐 Live Site Link: https://pet-adoupt-platfrom.web.app  
-## Client Side Github Repository Link:[Client Repo](https://github.com/mdtahsinislam/pet-adoupt-platfrom-client)
-## Server Side Github Repository Link:[Server Repo](https://github.com/mdtahsinislam/pet-adoupt-platfrom-serverr)
+## 🔗 Client Side Github Repository Link:[Client Repo](https://github.com/mdtahsinislam/pet-adoupt-platfrom-client)
+## 🔗 Server Side Github Repository Link:[Server Repo](https://github.com/mdtahsinislam/pet-adoupt-platfrom-serverr)
 
-## 🔐 Important information # 🎯pet-adoupt-platfrom
+## 🔐 Important information 🎯Pet Adoption Platform
 * **1.👑Admin email: admin@gmail.com**
 * **2.👑Admin password🗝️: 123456**
 * **Database : DBpet's**
