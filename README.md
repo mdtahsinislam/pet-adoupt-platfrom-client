@@ -27,9 +27,9 @@ This project enables users to browse pets, send adoption requests, donate to cam
 ## Server Side Github Repository Link:[Server Repo](https://github.com/mdtahsinislam/pet-adoupt-platfrom-serverr)
 
 ## 🔐 Important information # 🎯pet-adoupt-platfrom
-* ## 1. Admin email: admin@gmail.com
-* ## 2. Admin password: 123456
-* ## Database : DBpet's
+* **1.👑Admin email: admin@gmail.com**
+* **2.👑Admin password🗝️: 123456**
+* **Database : DBpet's**
 ---
 
 ## 📌 Table of Contents
@@ -133,7 +133,7 @@ Pages:
 
 ---
 
-## 🛠 Admin Dashboard
+##  👑Admin Dashboard
 Admins see everything users do **+ extra pages**:
 
 - **Users Management**:  
@@ -171,9 +171,7 @@ Admins see everything users do **+ extra pages**:
 
 ## ⚙️ Installation
 ```bash
-# Clone the repo
-git clone https://github.com/your-username/pet-adoption-platform.git
-cd pet-adoption-platform
+
 
 # Install dependencies
 npm install
