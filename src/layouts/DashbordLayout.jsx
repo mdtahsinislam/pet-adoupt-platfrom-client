@@ -963,6 +963,8 @@ import web from "../assets/images/logo-selected.jpg";
 import { Switch, Typography } from "@material-tailwind/react"; 
 import { ThemeContext } from '../context/ThemeContext';
 import { AuthContext } from '../context/AuthProvider';
+//import Adminprofile from '../';pet-adoupt-platfrom-client\src\Pages\Dashbord\Element\Adminprofile.jsx
+//import Adminprofile from "../Pages/Dashbord/Element/Adminprofile";
 
 import {
   FaBullhorn, FaDonate, FaHandHoldingHeart, FaHandshake,
@@ -970,6 +972,7 @@ import {
 } from 'react-icons/fa';
 import { MdDashboardCustomize } from "react-icons/md";
 import useAdmin from '../hooks/useAdmin'; 
+import { FcBullish, FcBusinessman, FcOnlineSupport } from 'react-icons/fc';
 
 const DashbordLayout = () => {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
@@ -1047,6 +1050,18 @@ const DashbordLayout = () => {
         <ul className="menu p-4 w-full text-base-content space-y-2">
           {isAdmin && (
             <>
+             <li>
+                <Link to="/dashbord/adminprofile" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
+                  <FcOnlineSupport className="text-xl  text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
+                  Admin Profile
+                </Link>
+              </li>
+              <li>
+                <Link to="/dashbord/overview" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
+                  <FcBullish className="text-xl  text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
+                  Overview
+                </Link>
+              </li>
               <li>
                 <Link to="/dashbord/users" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
                   <FaUsers className="text-xl text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
@@ -1068,6 +1083,12 @@ const DashbordLayout = () => {
             </>
           )}
 
+           <li>
+            <Link to="/dashbord/userprofile" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
+              <FcBusinessman className="text-xl text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
+              User Profile
+            </Link>
+          </li>
           <li>
             <Link to="/dashbord/addpet" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
               <FaPlusCircle className="text-xl text-indigo-500 group-hover:text-indigo-700 transition duration-300" />

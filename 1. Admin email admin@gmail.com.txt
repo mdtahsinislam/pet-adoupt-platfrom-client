@@ -1,0 +1,9 @@
+1. Admin email: admin@gmail.com
+
+2. Admin password: 123456
+
+3. Front-end Live Site Link: https://pet-adoupt-platfrom.web.app
+
+4. Client Side Github Repository Link: https://github.com/mdtahsinislam/pet-adoupt-platfrom-client
+
+5. Server Side Github Repository Link: https://github.com/mdtahsinislam/pet-adoupt-platfrom-serverr

@@ -28,6 +28,9 @@ import MyDonations from "../Pages/Dashbord/Element/MyDonations";
 import MyAdoptionRequests from "../Pages/Dashbord/Element/MyAdoptionRequests";
 import AllPets from "../Pages/Dashbord/Element/AllPets";
 import AllDonations from "../Pages/Dashbord/Element/AllDonations";
+import Adminprofile from "../Pages/Dashbord/Element/Adminprofile";
+import Userprofile from "../Pages/Dashbord/Element/Userprofile";
+import Overview from "../Pages/Dashbord/Element/Overview";
 //import Usees from "../Pages/Dashbord/Element/Usees";
 
   export const router = createBrowserRouter([
@@ -86,11 +89,26 @@ import AllDonations from "../Pages/Dashbord/Element/AllDonations";
         element:<Addpet></Addpet>
       },
       {
+       path:"userprofile" ,
+       element:<Userprofile></Userprofile>
+      },
+      {
         path:"users",
         element:<AdminRoute> <Users></Users></AdminRoute>
         
        
       },
+      {
+        path:"overview",
+        element:<AdminRoute> <Overview></Overview></AdminRoute>
+      },
+      {
+        path:"adminprofile",
+        element: <AdminRoute>  <Adminprofile></Adminprofile> </AdminRoute>
+        
+       
+      },
+
       {
         path:"myaddedpets",
         element:<MyAddedPets></MyAddedPets>
