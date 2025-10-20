@@ -81,7 +81,7 @@ export default function Adminprofile() {
         }
 
         const email = user.email; // লগইন করা ইউজারের ইমেইল
-        const response = await axios.get(`http://localhost:3000/users/${email}`);
+        const response = await axios.get(`https://pet-adoupt-platfrom-serverr.vercel.app/users/${email}`);
         setAdminData(response.data);
       } catch (error) {
         console.error("Error fetching admin data:", error);

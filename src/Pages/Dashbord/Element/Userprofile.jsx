@@ -27,11 +27,11 @@ const userEmail = auth.currentUser ? auth.currentUser.email : null;
     const fetchUserData = async () => {
       try {
         // Fetch user profile
-        const res = await axios.get(`http://localhost:3000/users/${userEmail}`);
+        const res = await axios.get(`https://pet-adoupt-platfrom-serverr.vercel.app/users/${userEmail}`);
         setUser(res.data);
 
         // Fetch adoption requests for this user
-        const adoptionRes = await axios.get(`http://localhost:3000/my-adoption-requests/${userEmail}`);
+        const adoptionRes = await axios.get(`https://pet-adoupt-platfrom-serverr.vercel.app/my-adoption-requests/${userEmail}`);
         setAdoptions(adoptionRes.data);
       } catch (err) {
         console.error("Error fetching user data:", err);

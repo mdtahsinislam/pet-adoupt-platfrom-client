@@ -428,10 +428,10 @@ export default function Overview() {
     const fetchData = async () => {
       try {
         // ⚙️ API endpoints update করো তোমার server অনুযায়ী
-        const usersRes = await axios.get('http://localhost:3000/all-users');
-        const petsRes = await axios.get('http://localhost:3000/all-pets');
-        const adoptionsRes = await axios.get('http://localhost:3000/all-adoption-requests');
-        const donationsRes = await axios.get('http://localhost:3000/all-donation-campaigns');
+        const usersRes = await axios.get('https://pet-adoupt-platfrom-serverr.vercel.app/all-users');
+        const petsRes = await axios.get('https://pet-adoupt-platfrom-serverr.vercel.app/all-pets');
+        const adoptionsRes = await axios.get('https://pet-adoupt-platfrom-serverr.vercel.app/all-adoption-requests');
+        const donationsRes = await axios.get('https://pet-adoupt-platfrom-serverr.vercel.app/all-donation-campaigns');
 
         // ✅ Total stats
         setStats({
