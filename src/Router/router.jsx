@@ -31,6 +31,8 @@ import AllDonations from "../Pages/Dashbord/Element/AllDonations";
 import Adminprofile from "../Pages/Dashbord/Element/Adminprofile";
 import Userprofile from "../Pages/Dashbord/Element/Userprofile";
 import Overview from "../Pages/Dashbord/Element/Overview";
+import Service from "../Pages/NavbarFeature/Service";
+import Contact from "../Pages/NavbarFeature/Contact";
 //import Usees from "../Pages/Dashbord/Element/Usees";
 
   export const router = createBrowserRouter([
@@ -45,6 +47,16 @@ import Overview from "../Pages/Dashbord/Element/Overview";
     {
       path:"petlisting",
       element:<PetListing></PetListing>
+
+    },
+    {
+      path:"service",
+      element:<Service></Service>
+
+    },
+    {
+      path:"contact",
+      element:<Contact></Contact>
 
     },
     {

@@ -955,7 +955,197 @@
 
 // sm /mobile  device এ  main content  উপরে  sider নিচে দেখাবে
 
+//go to deep seak
 
+// import React, { useContext } from 'react';
+// import { Link, Outlet } from 'react-router-dom';   
+// import web from "../assets/images/logo-selected.jpg";
+// import { Switch, Typography } from "@material-tailwind/react"; 
+// import { ThemeContext } from '../context/ThemeContext';
+// import { AuthContext } from '../context/AuthProvider';
+// //import Adminprofile from '../';pet-adoupt-platfrom-client\src\Pages\Dashbord\Element\Adminprofile.jsx
+// //import Adminprofile from "../Pages/Dashbord/Element/Adminprofile";
+
+// import {
+//   FaBullhorn, FaDonate, FaHandHoldingHeart, FaHandshake,
+//   FaList, FaPaw, FaPlusCircle, FaThList, FaUsers
+// } from 'react-icons/fa';
+// import { MdDashboardCustomize } from "react-icons/md";
+// import useAdmin from '../hooks/useAdmin'; 
+// import { FcBullish, FcBusinessman, FcOnlineSupport } from 'react-icons/fc';
+
+// const DashbordLayout = () => {
+//   const { darkMode, setDarkMode } = useContext(ThemeContext);
+//   const { user, logout } = useContext(AuthContext);
+//   const [isAdmin, isAdminLoading] = useAdmin();
+
+//   const handleThemeToggle = () => {
+//     setDarkMode(!darkMode);
+//   };
+
+//   const handleLogout = async () => {
+//     try {
+//       await logout();
+//     } catch (error) {
+//       console.error("Logout error:", error);
+//     }
+//   };
+
+//   if (isAdminLoading) {
+//     return (
+//       <div className="flex items-center justify-center h-screen dark:text-white">
+//         Loading dashboard...
+//       </div>
+//     );
+//   }
+
+//   return (
+//     <div
+//       className={`
+//         flex flex-col 
+//         md:flex-row    /* On md and up: flex row */
+//         min-h-screen
+//       `}
+//     >
+//       {/* Sidebar */}
+//       <div
+//         className="w-full md:w-1/3 lg:w-1/4 
+//           bg-white dark:bg-gray-900 
+//           border-t md:border-t-0 md:border-r border-gray-300 dark:border-gray-700
+//           pt-6
+//           order-2 md:order-1
+//           shadow-md   h-screen
+//     fixed
+//     z-0
+//           "
+//         style={{ boxShadow: '0 -2px 8px rgba(0,0,0,0.1)', zIndex: 40 }}
+//       >
+//         {/* Logo + Dark Mode */}
+//         <div className="flex flex-col px-4 pb-4 gap-3">
+//           <Link to="/" className="flex items-center bg-white dark:bg-gray-900 p-2 rounded-lg shadow-md">
+//             <img className="w-14 h-14 rounded-lg" src={web} alt="logo" />
+//             <h1 className="text-xl font-bold text-blue-600 dark:text-blue-500 ml-2">
+//               PetAdoptPlatform
+//             </h1>
+//           </Link>
+
+//           {/* Theme Toggle */}
+//           <div className="flex items-center gap-2 mt-2">
+//             <Switch
+//               color="blue"
+//               checked={darkMode}
+//               onChange={handleThemeToggle}
+//               ripple={false}
+//             />
+//             <Typography variant="small" className="text-gray-700 dark:text-gray-200">
+//               Dark Mode
+//             </Typography>
+//           </div>
+//         </div>
+
+//         {/* Dashboard Heading */}
+//         <h1 className="text-2xl font-semibold flex items-center gap-2 px-4 py-2 sticky top-0 bg-white dark:bg-gray-900 dark:text-white border-b border-gray-300 dark:border-gray-700">
+//           <MdDashboardCustomize className="text-blue-600 dark:text-blue-400" /> Dashboard
+//         </h1>
+
+//         {/* Sidebar Menu */}
+//         <ul className="menu p-4 w-full text-base-content space-y-2">
+//           {isAdmin && (
+//             <>
+//              <li>
+//                <li>
+//                 <Link to="/dashbord/overview" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
+//                   <FcBullish className="text-xl  text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
+//                   Overview
+//                 </Link>
+//               </li>
+//                 <Link to="/dashbord/adminprofile" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
+//                   <FcOnlineSupport className="text-xl  text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
+//                   Admin Profile
+//                 </Link>
+//               </li>
+             
+//               <li>
+//                 <Link to="/dashbord/users" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
+//                   <FaUsers className="text-xl text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
+//                   Users
+//                 </Link>
+//               </li>
+//               <li>
+//                 <Link to="/dashbord/all-pets" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
+//                   <FaPaw className="text-xl text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
+//                   All Pets
+//                 </Link>
+//               </li>
+//               <li>
+//                 <Link to="/dashbord/all-donations" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
+//                   <FaDonate className="text-xl text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
+//                   All Donations
+//                 </Link>
+//               </li>
+//             </>
+//           )}
+
+//            <li>
+//             <Link to="/dashbord/userprofile" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
+//               <FcBusinessman className="text-xl text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
+//               User Profile
+//             </Link>
+//           </li>
+//           <li>
+//             <Link to="/dashbord/addpet" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
+//               <FaPlusCircle className="text-xl text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
+//               Add a Pet
+//             </Link>
+//           </li>
+//           <li>
+//             <Link to="/dashbord/myaddedpets" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
+//               <FaList className="text-xl text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
+//               My Added Pets
+//             </Link>
+//           </li>
+//           <li>
+//             <Link to="/dashbord/my-adoption-requests" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
+//               <FaHandshake className="text-xl text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
+//               Adoption Request
+//             </Link>
+//           </li>
+//           <li>
+//             <Link to="/dashbord/createdonationcampaign" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
+//               <FaBullhorn className="text-xl text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
+//               Create Donation Campaign
+//             </Link>
+//           </li>
+//           <li>
+//             <Link to="/dashbord/my-donation-campaigns" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
+//               <FaThList className="text-xl text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
+//               My Donation Campaigns
+//             </Link>
+//           </li>
+//           <li>
+//             <Link to="/dashbord/my-donations" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
+//               <FaHandHoldingHeart className="text-xl text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
+//               My Donations
+//             </Link>
+//           </li>
+//         </ul>
+//       </div>
+
+//       {/* Main Content */}
+//       <div className="w-full md:w-2/3 lg:w-3/4 px-4 py-6 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 order-1 md:order-2">
+//         <Outlet />
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default DashbordLayout;
+
+
+
+
+
+////deep
 
 import React, { useContext } from 'react';
 import { Link, Outlet } from 'react-router-dom';   
@@ -963,8 +1153,6 @@ import web from "../assets/images/logo-selected.jpg";
 import { Switch, Typography } from "@material-tailwind/react"; 
 import { ThemeContext } from '../context/ThemeContext';
 import { AuthContext } from '../context/AuthProvider';
-//import Adminprofile from '../';pet-adoupt-platfrom-client\src\Pages\Dashbord\Element\Adminprofile.jsx
-//import Adminprofile from "../Pages/Dashbord/Element/Adminprofile";
 
 import {
   FaBullhorn, FaDonate, FaHandHoldingHeart, FaHandshake,
@@ -1000,23 +1188,17 @@ const DashbordLayout = () => {
   }
 
   return (
-    <div
-      className={`
-        flex flex-col 
-        md:flex-row    /* On md and up: flex row */
-        min-h-screen
-      `}
-    >
-      {/* Sidebar */}
+    <div className="flex min-h-screen bg-gray-50 dark:bg-gray-800">
+      {/* Fixed Sidebar */}
       <div
         className="w-full md:w-1/3 lg:w-1/4 
           bg-white dark:bg-gray-900 
           border-t md:border-t-0 md:border-r border-gray-300 dark:border-gray-700
           pt-6
-          order-2 md:order-1
-          shadow-md
-          "
-        style={{ boxShadow: '0 -2px 8px rgba(0,0,0,0.1)', zIndex: 40 }}
+          fixed h-screen
+          overflow-y-auto
+          z-40
+          shadow-lg                    "
       >
         {/* Logo + Dark Mode */}
         <div className="flex flex-col px-4 pb-4 gap-3">
@@ -1042,7 +1224,7 @@ const DashbordLayout = () => {
         </div>
 
         {/* Dashboard Heading */}
-        <h1 className="text-2xl font-semibold flex items-center gap-2 px-4 py-2 sticky top-0 bg-white dark:bg-gray-900 dark:text-white border-b border-gray-300 dark:border-gray-700">
+        <h1 className="text-2xl font-semibold flex items-center gap-2 px-4 py-2 bg-white dark:bg-gray-900 dark:text-white border-b border-gray-300 dark:border-gray-700">
           <MdDashboardCustomize className="text-blue-600 dark:text-blue-400" /> Dashboard
         </h1>
 
@@ -1050,16 +1232,16 @@ const DashbordLayout = () => {
         <ul className="menu p-4 w-full text-base-content space-y-2">
           {isAdmin && (
             <>
-             <li>
-                <Link to="/dashbord/adminprofile" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
-                  <FcOnlineSupport className="text-xl  text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
-                  Admin Profile
+              <li>
+                <Link to="/dashbord/overview" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
+                  <FcBullish className="text-xl text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
+                  Overview
                 </Link>
               </li>
               <li>
-                <Link to="/dashbord/overview" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
-                  <FcBullish className="text-xl  text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
-                  Overview
+                <Link to="/dashbord/adminprofile" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
+                  <FcOnlineSupport className="text-xl text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
+                  Admin Profile
                 </Link>
               </li>
               <li>
@@ -1083,7 +1265,7 @@ const DashbordLayout = () => {
             </>
           )}
 
-           <li>
+          <li>
             <Link to="/dashbord/userprofile" className="group rounded dark:text-white hover:bg-blue-100 dark:hover:bg-blue-800 px-3 py-2 flex gap-2 items-center">
               <FcBusinessman className="text-xl text-indigo-500 group-hover:text-indigo-700 transition duration-300" />
               User Profile
@@ -1128,8 +1310,8 @@ const DashbordLayout = () => {
         </ul>
       </div>
 
-      {/* Main Content */}
-      <div className="w-full md:w-2/3 lg:w-3/4 px-4 py-6 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 order-1 md:order-2">
+      {/* Main Content with proper margin */}
+      <div className="w-full md:ml-[33.333%] lg:ml-[25%] px-4 py-6 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 min-h-screen">
         <Outlet />
       </div>
     </div>
@@ -1137,8 +1319,3 @@ const DashbordLayout = () => {
 };
 
 export default DashbordLayout;
-
-
-
-
-

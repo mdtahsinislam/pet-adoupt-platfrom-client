@@ -83,6 +83,12 @@ const Navbar = () => {
           <Link to="/donationampaigns" className="text-sm font-semibold hover:text-blue-500 dark:text-white">
              Donation Campaigns
           </Link>
+            <Link to="/service" className="text-sm font-semibold hover:text-blue-500 dark:text-white">
+            Our Service
+          </Link>
+           <Link to="/contact" className="text-sm font-semibold hover:text-blue-500 dark:text-white">
+            Contact
+          </Link>
         </div>
 
         {/* Theme Toggle & Auth (Desktop) */}
@@ -140,6 +146,13 @@ const Navbar = () => {
           <Link to="/petlisting" onClick={() => setOpenNav(false)} className="text-sm font-semibold dark:text-white">Pet List</Link>
           <Link to="/donationampaigns" onClick={() => setOpenNav(false)} className="text-sm font-semibold dark:text-white">Donation Campaigns</Link>
           
+
+ <Link to="/service" onClick={() => setOpenNav(false)} className="text-sm font-semibold dark:text-white"> Our Service</Link>
+          <Link to="/contact" onClick={() => setOpenNav(false)} className="text-sm font-semibold dark:text-white">Contact</Link>
+          
+
+
+
           <div className="flex items-center gap-2">
             <Switch
               id="theme-toggle-mobile"
