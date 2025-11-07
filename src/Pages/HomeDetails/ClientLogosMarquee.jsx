@@ -22,7 +22,7 @@ const ClientLogosMarquee = () => {
         <Marquee pauseOnHover speed={50} gradient={false}>
           {logos.map((logo, idx) => (
             <div key={idx} className="mx-24 flex items-center">
-              <img src={logo} alt={`Client Logo ${idx + 1}`} className="h-6 object-contain" />
+              <img src={logo} alt={`Client Logo ${idx + 1}`} className="h-6 object-contain   dark:invert" />
             </div>
           ))}
         </Marquee>

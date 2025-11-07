@@ -120,14 +120,14 @@ const AboutUs = () => {
                     <Typography
                         variant="h3"
                         color="blue-gray"
-                        className="mb-6 font-bold leading-tight"
+                        className="mb-6 font-bold leading-tight text-black dark:text-white"
                     >
                         Best Service to Breed Your Loved Pet's
                     </Typography>
                     <Typography
                         variant="lead"
                         color="gray"
-                        className="mb-8 text-lg"
+                        className="mb-8 text-lg text-black dark:text-white"
                     >
                         Welcome to **PetAdoptPlatform**! Our journey began with a simple yet profound goal: to create a compassionate bridge between loving families and pets seeking forever homes. We understand the profound joy and companionship a pet brings into your life, and our platform is meticulously designed to make the adoption process seamless, transparent, and joyful. We're dedicated to ensuring every pet finds a caring home and that every family discovers their perfect furry companion, contributing to a world where every pet is cherished.
                     </Typography>
@@ -137,10 +137,10 @@ const AboutUs = () => {
                             {/* Use FaDog component directly */}
                             <FaDog className="text-orange-500 text-5xl mt-1" />
                             <div>
-                                <Typography variant="h5" color="blue-gray" className="font-bold">
+                                <Typography variant="h5" color="blue-gray" className="font-bold text-black dark:text-white">
                                     Professional Breeder
                                 </Typography>
-                                <Typography variant="paragraph" color="gray">
+                                <Typography variant="paragraph" color="gray" className='text-black dark:text-white'>
                                     We collaborate exclusively with ethical and professional breeders committed to the health, well-being, and responsible rehoming of animals.
                                 </Typography>
                             </div>
@@ -149,10 +149,10 @@ const AboutUs = () => {
                             {/* Use FaAward component directly */}
                             <FaAward className="text-orange-500 text-4xl  mt-1" />
                             <div>
-                                <Typography variant="h5" color="blue-gray" className="font-bold">
+                                <Typography variant="h5" color="blue-gray" className="font-bold text-black dark:text-white">
                                     Standard Quality
                                 </Typography>
-                                <Typography variant="paragraph" color="gray">
+                                <Typography variant="paragraph" color="gray" className='text-black dark:text-white'>
                                     Every pet listed on PetAdoptPlatform meets rigorous health and welfare standards, giving you confidence in your new family member.
                                 </Typography>
                             </div>

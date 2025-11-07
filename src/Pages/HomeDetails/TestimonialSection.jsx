@@ -441,10 +441,10 @@ const TestimonialSection = () => {
           <img src={call} alt="Illustration" className="h-24 w-auto" />
         </div>
 
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">
+        <h2 className="text-4xl font-bold text-black dark:text-white mb-4">
           What our customers are saying
         </h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-12">
+        <p className="text-lg  text-black dark:text-white max-w-2xl mx-auto mb-12">
           Enhance posture, mobility, and well-being effortlessly with Posture Pro.
         </p>
 

@@ -123,9 +123,9 @@ const PetListing = () => {
           <Typography variant="h5" color="gray">No pets found matching your criteria.</Typography>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8  ">
           {allPets.map((pet) => (
-            <Card key={pet._id} className="w-full max-w-[26rem] shadow-lg">
+            <Card key={pet._id} className="w-full max-w-[26rem] shadow-lg bg-white dark:bg-gray-800">
               <CardHeader floated={false} color="blue-gray" className="relative h-56">
                 <img
                   src={pet.petImage}
@@ -134,13 +134,13 @@ const PetListing = () => {
                 />
               </CardHeader>
               <CardBody>
-                <Typography variant="h5" color="blue-gray" className="mb-2">
+                <Typography variant="h5" color="blue-gray" className="mb-2 text-black dark:text-white">
                   {pet.petName}
                 </Typography>
-                <Typography>
-                  <span className="font-semibold">Age:</span> {pet.petAge} years
+                <Typography className=' text-black dark:text-white'>
+                  <span className="font-semibold text-black dark:text-white">Age:</span> {pet.petAge} years
                 </Typography>
-                <Typography>
+                <Typography className='text-black dark:text-white'>
                   <span className="font-semibold">Location:</span> {pet.petLocation}
                 </Typography>
               </CardBody>

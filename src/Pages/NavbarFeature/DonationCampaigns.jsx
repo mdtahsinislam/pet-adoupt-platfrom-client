@@ -72,32 +72,32 @@ const DonationCampaigns = () => {
             <Typography variant="h2" color="blue-gray" className="mb-8 text-center dark:text-white">
                 All Donation Campaigns
             </Typography>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
                 {campaigns.map((campaign) => (
-                    <Card key={campaign._id} className="w-full max-w-[24rem] shadow-lg overflow-hidden">
+                    <Card key={campaign._id} className="w-full max-w-[24rem] shadow-lg overflow-hidden bg-white dark:bg-gray-800">
                         <img
                             src={campaign.petPicture}
                             alt={campaign.petName}
                             className="h-56 w-full object-cover"
                         />
                         <CardBody>
-                            <Typography variant="h5" color="blue-gray" className="mb-2">
+                            <Typography variant="h5" color="blue-gray" className="mb-2 text-black dark:text-white">
                                 {campaign.petName || 'Pet Name Here'}
                             </Typography>
-                            <div className="flex items-center justify-between mt-4">
-                                <Typography variant="small" color="gray">
+                            <div className="flex items-center justify-between mt-4 text-black dark:text-white">
+                                <Typography variant="small" color="gray" className='text-black dark:text-white'>
                                     <span className="font-semibold">Max Donation:</span> ${campaign.maximumDonation}
                                 </Typography>
-                                <Typography variant="small" color="gray">
+                                <Typography variant="small" color="gray" className='text-black dark:text-white'>
                                     <span className="font-semibold">Donated:</span> ${campaign.donatedAmount}
                                 </Typography>
                             </div>
-                            <Progress
+                            {/* <Progress
                                 value={(campaign.donatedAmount / campaign.maximumDonation) * 100}
                                 size="lg"
                                 color="blue"
                                 className="mt-4"
-                            />
+                            /> */}
                         </CardBody>
                         <CardFooter className="pt-0">
                             <Link to={`/donation-campaigns/${campaign._id}`}>
