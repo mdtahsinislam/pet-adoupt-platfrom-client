@@ -74,48 +74,51 @@ const Award = () => {
                 <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-4">
 
                     {/* Stat Item 1: Our Staff */}
-                    <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow">
+                    <div className="flex flex-col items-center p-6 bg-black rounded-lg shadow">
                         <svg className="h-16 w-16 text-gray-500 mb-4" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.5.86 2.47 2.37 2.47 3.95V19h5v-2.5c0-2.33-4.67-3.5-7-3.5z" />
                         </svg>
                      
-                        <p className="text-xl font-medium text-gray-700">Our Staff</p>
-                        <p className="mt-2 text-4xl font-extrabold text-gray-900">
+                        <p className="text-xl font-medium text-white">Our Staff</p>
+                        <p className="mt-2 text-4xl font-extrabold text-white">
                             <CountUp end={145} duration={8} />
                         </p>
                     </div>
 
                     {/* Stat Item 2: Award */}
-                    <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow">
+                    <div className="flex flex-col items-center p-6 bg-black rounded-lg shadow">
                         {/* <svg className="h-16 w-16 text-gray-500 mb-4" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                         </svg> */}
                         <span style={{ fontSize: '40px' }}>🏅</span>
 
-                        <p className="text-xl font-medium text-gray-700">Award</p>
-                        <p className="mt-2 text-4xl font-extrabold text-gray-900">
+                        <p className="text-xl font-medium text-white">Award</p>
+                        <p className="mt-2 text-4xl font-extrabold text-white">
                             <CountUp end={152} duration={8} />
                         </p>
                     </div>
 
                     {/* Stat Item 3: Cup Coffee */}
-                    <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow">
+                    <div className="flex flex-col items-center p-6 bg-black rounded-lg shadow">
                       
                       <span style={{ fontSize: '40px' }}>🏆</span>
 
-                        <p className="text-xl font-medium text-gray-700">Cup Trophy</p>
-                        <p className="mt-2 text-4xl font-extrabold text-gray-900">
+                        <p className="text-xl font-medium text-white">Cup Trophy</p>
+                        <p className="mt-2 text-4xl font-extrabold text-white">
                             <CountUp end={780} duration={10} />
                         </p>
                     </div>
 
+
+                    
+
                     {/* Stat Item 4: Happy People */}
-                    <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow">
+                    <div className="flex flex-col items-center p-6 bg-black rounded-lg shadow">
                         <svg className="h-16 w-16 text-gray-500 mb-4" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
                         </svg>
-                        <p className="text-xl font-medium text-gray-700">Happy People</p>
-                        <p className="mt-2 text-4xl font-extrabold text-gray-900">
+                        <p className="text-xl font-medium text-white">Happy People</p>
+                        <p className="mt-2 text-4xl font-extrabold text-white">
                             <CountUp end={18560} duration={20} separator="," />
                         </p>
                     </div>
