@@ -11,7 +11,7 @@ This project enables users to browse pets, send adoption requests, donate to cam
 
 ## 🚀 Live Website showcase
 
-# 🌐 Live Site Link: https://pet-adoupt-platfrom.web.app  
+# 🌐 Live Site Link: https://pet-adoupt-platfrom.web.app/ 
 ## 🔗 Client Side Github Repository Link:[Client Repo](https://github.com/mdtahsinislam/pet-adoupt-platfrom-client)
 ## 🔗 Server Side Github Repository Link:[Server Repo](https://github.com/mdtahsinislam/pet-adoupt-platfrom-serverr) 
 
