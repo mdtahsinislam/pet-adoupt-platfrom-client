@@ -18,6 +18,8 @@ https://pet-adoupt-platfrom.web.app
 ## 🔐 Important information 🎯Pet Adoption Platform
 * **1.👑Admin email: admin@gmail.com**
 * **2.👑Admin password🗝️: 123456**
+  - **Email**:ammu@gmail.com
+  - **Password**: 123456
 * **Database : DBpet's**
 ---
 
